@@ -12,6 +12,7 @@ gem 'cocoon', '~> 1.2.6'
 gem 'paperclip', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'jquery-rails'
+gem 'devise', '~> 3.3.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
