@@ -25,38 +25,136 @@
 
 $red: #DB6161;
 
+$white_opaque: rgba(250, 250, 250, .3);
+ $dark: #1F7972;
+
+* {
+	box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
 body {
-	background: rgb(235, 238, 243);
+ 	height: 100%;
+  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  font-family: 'Lato', sans-serif;
 }
 
-.main_content {
-	padding: 0 0 50px 0;
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
 }
 
-.alert {
-	padding: 15px;
-	margin-bottom: 20px;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	@include box-shadow;
-	background: white;
-	font-weight: bold;
+.clearfix:after {
+    clear: both;
 }
 
-.navbar {
-	margin-bottom: 50px;
-	@include box-shadow;
-	border: none;
-	.navbar-brand {
-		text-transform: uppercase;
-		letter-spacing: -1px;
-		font-weight: bold;
-		font-size: 25px;
-		a {
-			color: $red;
+#notice {
+	text-align: center;
+	font-size: 0.6em;
+	color: $dark;
+	font-weight: 100;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	background: $white_opaque;
+	margin: 3em auto 0 auto;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
+	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+	padding: 1em 0;
+}
+
+
+
+	#form {
+		margin-top: 2em;
+		padding: 0 5%;
+		input[type="text"] {
+			width: 72%;
+			margin-right: 2%;
+			display: inline-block;
+			outline: none;
+			background: rgba(250,250,250,.4);
+			border: none;
+			height: 40px;
+			border-radius: 4px;
+			padding: 1em 2em;
 		}
+		input[type="submit"] {
+			background: rgba(250,250,250,.4);
+			outline: none;
+			border: none;
+			height: 40px;
+			border-radius: 4px;
+			width: 25%;
+			display: inline-block;
+			transition: all .4s ease-in-out;
+			cursor: pointer;
+			&:hover {
+				background: $dark;
+			}
+		}
+		::-webkit-input-placeholder { color: $dark; }
+	}
+
+
+.links {
+	display: block;
+	margin: 1.5em auto 0 auto;
+	text-align: center;
+	font-size: 0.8em;
+	color: white;
+	a {
+		color: white;
 	}
 }
+
+.forms {
+	padding: 0 5%;
+}
+label {
+	color: $dark;
+}
+input[type="text"], textarea {
+	width: 100%;
+	margin: .5em 2% 1em 0;
+	display: inline-block;
+	outline: none;
+	background: rgba(250,250,250,.4);
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	padding: 1em 2em;
+}
+textarea {
+	height: 200px;
+}
+input[type="submit"] {
+	background: white;
+	outline: none;
+	border: none;
+	height: 40px;
+	border-radius: 4px;
+	width: 25%;
+	display: inline-block;
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+	color: $dark;
+	&:hover {
+		background: $dark;
+		color: white;
+	}
+}
+::-webkit-input-placeholder { color: $dark; }
 
 .recipe {
 	background: white;
