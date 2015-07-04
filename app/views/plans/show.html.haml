@@ -5,8 +5,16 @@
 			#plan_info
 				%h1= @plan.title
 				%p.description= @plan.description
-		.col-md-12
-			= image_tag @recipe.image.url(:medium)
+		
+		- @move.each_slice(3) do |moves|
+			.row
+				- moves.each do |move|
+					.col-md-4
+						.move
+							.image_wrapper
+								= image_tag @recipe.image.url(:medium)
+					
+
 
 
 

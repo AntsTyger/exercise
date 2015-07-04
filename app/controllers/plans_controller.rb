@@ -33,7 +33,7 @@ class PlansController < ApplicationController
 	private
 
 	def plan_params
-		params.require(:plan).permit(:title, :description, :image)
+		params.require(:plan).permit(:title, :description, :image, moves_attributes: [:id, :step, :_destroy])
 	end
 
 	def find_plan
