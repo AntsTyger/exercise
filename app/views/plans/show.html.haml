@@ -1,0 +1,15 @@
+.main_content
+	#plan_top.row
+
+		.col-md-12
+			#plan_info
+				%h1= @plan.title
+				%p.description= @plan.description
+		.col-md-12
+			= image_tag @recipe.image.url(:medium), class: "plan_image"
+
+
+
+	.row
+		.col-md-12
+			= link_to "Back", root_path, class: "btn btn-default"

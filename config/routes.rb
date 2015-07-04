@@ -1,15 +1,14 @@
 Rails.application.routes.draw do
-  devise_for :users 
+ devise_for :users 
  resources :users, only: [:index, :new, :create, :show, :destroy, :edit, :update]
  resources :recipes
+ resources :plans
 
- 
-   resources :workouts do
+ resources :workouts do
   	resources :exercises
-  end
+ end
 
  root 'static_pages#home'
  get 'about'     =>  'static_pages#about'
-
  get "stats" => "static_pages#stats"
 end
