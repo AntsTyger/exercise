@@ -59,9 +59,10 @@ ActiveRecord::Schema.define(version: 20150722223409) do
     t.string   "encrypted_password",     default: "", null: false
     t.string   "name"
     t.string   "gender"
-    t.string   "age"
-    t.string   "weight"
-    t.string   "height"
+    t.integer  "age"
+    t.integer  "weight"
+    t.integer  "height"
+    t.integer  "BMI"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

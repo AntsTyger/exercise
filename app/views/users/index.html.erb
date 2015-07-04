@@ -4,6 +4,13 @@
 <p style="color:white">Gender: <%= current_user.gender %></p>
 <p style="color:white">Height: <%= current_user.height %> ft.</p>
 <p style="color:white">Weight: <%= current_user.weight %> lbs</p>
+<p style="color:white">BMI: <%= current_user.BMI %> </p>
+
+<p style="color:white">The guidelines for BMI are as follows:</p>
+<p style="color:white">underweight (BMI less than 18.5)</p> 
+<p style="color:white">normal weight (BMI between 18.5 & 24.9)</p>
+<p style="color:white">overweight (BMI between 25.0 & 29.9)</p>
+<p style="color:white">obese (BMI 30.0 and above)</p>
 
 <%= link_to "Your Settings", edit_user_registration_path, class:"btn btn-blue, btn-lg" %>
 </div>
