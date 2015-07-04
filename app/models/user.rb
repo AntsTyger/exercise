@@ -7,5 +7,6 @@ class User < ActiveRecord::Base
     has_one :profile
     has_one :stats
     has_many :recipes
+    has_many :plans
 end
 

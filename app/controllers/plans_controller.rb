@@ -11,11 +11,11 @@ class PlansController < ApplicationController
 	end
 
 	def new
-		@plan = current_user.plans.build
+		@plan = Plan.new
 	end
 
 	def create
-		@plan = current_user.plans.build(plan_params)
+		@plan = Plan.new(plan_params)
 
 		if @plan.save
 			redirect_to @plan, notice: "Successfully created new plan"

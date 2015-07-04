@@ -1,4 +1,8 @@
 class Plan < ActiveRecord::Base
+    belongs_to :user
+
+	has_many :move
+    
      validates :title, :description, :image, presence: true
 
 	has_attached_file :image, styles: { :medium => "400x400#" }
