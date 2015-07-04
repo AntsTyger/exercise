@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722223405) do
+ActiveRecord::Schema.define(version: 20150722223409) do
 
   create_table "directions", force: true do |t|
     t.text     "step"
@@ -34,22 +34,22 @@ ActiveRecord::Schema.define(version: 20150722223405) do
   add_index "exercises", ["workout_id"], name: "index_exercises_on_workout_id"
 
   create_table "ingredients", force: true do |t|
-    t.string   "name",       limit: nil
+    t.string   "name"
     t.integer  "recipe_id"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "ingredients", ["recipe_id"], name: "index_ingredients_on_recipe_id"
 
   create_table "recipes", force: true do |t|
-    t.string   "title",              limit: nil
+    t.string   "title"
     t.text     "description"
     t.integer  "user_id"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.string   "image_file_name",    limit: nil
-    t.string   "image_content_type", limit: nil
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
   end
@@ -57,6 +57,11 @@ ActiveRecord::Schema.define(version: 20150722223405) do
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "name"
+    t.string   "gender"
+    t.string   "age"
+    t.string   "weight"
+    t.string   "height"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -67,6 +72,8 @@ ActiveRecord::Schema.define(version: 20150722223405) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

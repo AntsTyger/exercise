@@ -75,36 +75,6 @@ body {
 
 
 
-	#form {
-		margin-top: 2em;
-		padding: 0 5%;
-		input[type="text"] {
-			width: 72%;
-			margin-right: 2%;
-			display: inline-block;
-			outline: none;
-			background: rgba(250,250,250,.4);
-			border: none;
-			height: 40px;
-			border-radius: 4px;
-			padding: 1em 2em;
-		}
-		input[type="submit"] {
-			background: rgba(250,250,250,.4);
-			outline: none;
-			border: none;
-			height: 40px;
-			border-radius: 4px;
-			width: 25%;
-			display: inline-block;
-			transition: all .4s ease-in-out;
-			cursor: pointer;
-			&:hover {
-				background: $dark;
-			}
-		}
-		::-webkit-input-placeholder { color: $dark; }
-	}
 
 
 .links {
@@ -124,6 +94,17 @@ body {
 label {
 	color: $dark;
 }
+
+inline {
+	margin-top: 15px;
+}
+
+button {
+	float: left;
+	width: 30% !important;
+	margin-left: 5%;
+}
+
 input[type="text"], textarea {
 	width: 100%;
 	margin: .5em 2% 1em 0;
@@ -154,6 +135,9 @@ input[type="submit"] {
 		color: white;
 	}
 }
+
+
+
 ::-webkit-input-placeholder { color: $dark; }
 
 .recipe {
@@ -229,21 +213,6 @@ input[type="submit"] {
 	}
 }
 
-.form-inline {
-	margin-top: 15px;
-}
-.form-input {
-	width: 65% !important;
-	float: left;
-}
-.form-button {
-	float: left;
-	width: 30% !important;
-	margin-left: 5%;
-}
-.add-button {
-	margin-top: 25px;
-}
 
 #index_workouts {
 	h2 {
@@ -261,3 +230,4 @@ input[type="submit"] {
 		}
 	}
 }
+
