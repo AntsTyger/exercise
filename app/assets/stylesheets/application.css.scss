@@ -45,15 +45,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
 
 #notice {
 	text-align: center;
@@ -61,20 +52,6 @@ body {
 	color: $dark;
 	font-weight: 100;
 }
-
-.container {
-	width: 90%;
-	max-width: 1000px;
-	background: $white_opaque;
-	margin: 3em auto 0 auto;
-	border-radius: 7px;
-	-webkit-box-shadow: 0 0 4px 3px rgba(0,0,0,.3);
-	box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-	padding: 1em 0;
-}
-
-
-
 
 
 .links {
@@ -110,7 +87,7 @@ input[type="text"], textarea {
 	margin: .5em 2% 1em 0;
 	display: inline-block;
 	outline: none;
-	background: rgba(250,250,250,.4);
+	background: white_opaque;;
 	border: none;
 	height: 40px;
 	border-radius: 4px;
@@ -230,4 +207,3 @@ input[type="submit"] {
 		}
 	}
 }
-

@@ -1,9 +1,0 @@
-- @plan.each_slice(3) do |plans|
-	.row
-		- plans.each do |plan|
-			.col-md-4
-				.plan
-					.image_wrapper
-						= link_to plan do
-							= image_tag plan.image.url(:medium)
-					%h2= link_to plan.title, plan

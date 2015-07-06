@@ -19,8 +19,6 @@
 					%li= link_to "New workout", new_workout_path
 					%li= link_to "Account Settings", edit_user_registration_path
 					%li= link_to "Profile", users_path
-					%li= link_to "Plans", new_plan_path
-					
 			- else
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "Sign Up", new_user_registration_path
@@ -30,4 +28,4 @@
 		- flash.each do |name, msg|
 			= content_tag :div, msg, class: "alert"
 
-		= yield
+		= yieldc
