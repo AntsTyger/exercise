@@ -1,0 +1,18 @@
+#pin_show.row
+	.col-md-8.col-md-offset-2
+		.panel.panel-default
+			.panel-heading.routine_image
+				= image_tag @routine.image.url
+			.panel-body
+				%h1= @routine.title
+				%p.description= @routine.description
+			.panel-footer
+				.row
+						.col-md-6
+						.btn-group.pull-right
+							= link_to like_routine_path(@routine), method: :put, class: "btn btn-default" do
+								%span.glyphicon.glyphicon-heart
+								= @pin.get_upvotes.size
+							- if user_signed_in?
+								= link_to "Edit", edit_routine_path, class: "btn btn-default"
+								= link_to "Delete", routine_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
