@@ -34,7 +34,7 @@ def destroy
 end
 
 def new
-    @routine = current_user.pins.build
+    @routine = current_user.routines.build
 end
 
 def show
