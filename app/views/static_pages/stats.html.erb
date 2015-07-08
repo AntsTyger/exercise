@@ -1,27 +1,25 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <div class="panel-title">
-      <h1>Edit </h1>
+<% provide(:title, "Reports") %>
+
+<!--h1>Reports and Charts</h1>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <h3>Report 1</h3>
+ 
+      <img src=" -->
+        <!--%= require 'gchart'
+        Gchart.line(:size  => '500x300',
+              :title       => "Minutes of Upper body",
+              :bg          => 'ADC5E0',
+              :graph_bg    => 'DCE8F5',
+              :line_colors => '365E8B',
+              :axis_with_labels => ['x,y'],
+              :axis_labels => [' ','0|10|20|50'],
+              :legend      => ['Leave Allowance'],
+              :data        => Workout.pluck(:length),
+              :alt         => "Leave Allowance Chart") %>
+      " />
+
     </div>
-  </div>
-  <div class="panel-body">
-    <%= form_for current_user do |f| %>
-
-      <div class="form-group">
-      <%= f.label :age %>
-      <%= f.text_field :age, class: "form-control" %>
-      </div>
-
-      <div class="form-group">
-      <%= f.label :weight %>
-      <%= f.text_field :weight, class: "form-control" %>
-      </div>
-
-     
-
-      <div class="form-group">
-        <%= f.submit "Update", class: "btn btn-primary" %>
-      </div>
-    <% end %>
-  </div>
-</div>
+</div-->
