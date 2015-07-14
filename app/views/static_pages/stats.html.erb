@@ -1,25 +1,32 @@
-<% provide(:title, "Reports") %>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
-<!--h1>Reports and Charts</h1>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-
-      <h3>Report 1</h3>
- 
-      <img src=" -->
-        <!--%= require 'gchart'
-        Gchart.line(:size  => '500x300',
-              :title       => "Minutes of Upper body",
-              :bg          => 'ADC5E0',
-              :graph_bg    => 'DCE8F5',
-              :line_colors => '365E8B',
-              :axis_with_labels => ['x,y'],
-              :axis_labels => [' ','0|10|20|50'],
-              :legend      => ['Leave Allowance'],
-              :data        => Workout.pluck(:length),
-              :alt         => "Leave Allowance Chart") %>
-      " />
-
-    </div>
-</div-->
+<script>
+$(function () { 
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
+    });
+});
+</script>

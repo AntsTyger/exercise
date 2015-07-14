@@ -12,11 +12,12 @@
 //
 
 
-//= require jquery_ujs
 //= require jquery
+//= require jquery_ujs
 //= require cocoon
-
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require masonry/jquery.masonry
+//= require highcharts
+
 //= require_tree .
