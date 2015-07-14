@@ -8,55 +8,42 @@
             <li class="active">
                 <a href="#fuel-tab" data-toggle="tab">Today</a>
             </li>
-            <li>
-                <a href="#co2-tab" data-toggle="tab">Week</a>
-            </li>
         </ul>
     </div>
+    
+    
     <div class="panel-body">
         <div class="tab-content">
             <div id="fuel-tab" class="tab-pane active">
                 <div class="row">
                     <div class="col-sm-12 col-md-7 chart">
+                        
                         <div class="caption">
-                            Workouts today
-                            
+                            This weeks workout
                         </div>
-                        <div id="workout"></div>
+                        <div id="workout-stats"></div>
                         <div class="legend">
-                            <span id="upper_body" class="label">Upper body</span>
-                            <span id="lower_body" class="label">Lower body</span>
-                            <span id="core" class="label">Core</span>
+                            <span id="up_body" class="label">up body</span>
+                            <span id="low_body" class="label">low body</span>
+                            <span id="abs" class="label">abs</span>
                         </div>
                     </div>
-                    
-                    
                     
                     <div class="col-sm-12 col-md-5 chart">
                         <div class="caption">
-                            Todays workout goals
+                            Todays workout 
                         </div>
-                        <div id="workout-goals"></div>
+                        <div id="todays-workout"></div>
                         <div class="legend">
-                            <span id="completed" class="label">completed</span>
-                            <span id="to-do" class="label">to do</span>
+                            <span id="circle_up_body" class="label">Upper body</span>
+                            <span id="circle_low_body" class="label">Lower body</span>
+                            <span id="circle_abs" class="label">Abs</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            
-            <div id="co2-tab" class="tab-pane">
-                <div class="row">
-                    <div class="col-xs-12 chart">
-                        <div class="caption">
-                            Something else
-                            <span class="label label-default">g/km</span>
-                        </div>
-                        <div id="co2-emissions"></div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
