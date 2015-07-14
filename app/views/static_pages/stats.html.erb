@@ -2,11 +2,14 @@
     <div class="panel-heading">
         <h3 class="panel-title">
             <i class="fa fa-signal"></i>
-            Workout stats
+            Monitoring report
         </h3>
         <ul class="nav nav-tabs">
             <li class="active">
                 <a href="#fuel-tab" data-toggle="tab">Today</a>
+            </li>
+            <li>
+                <a href="#co2-tab" data-toggle="tab">Week</a>
             </li>
         </ul>
     </div>
@@ -16,34 +19,39 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-7 chart">
                         <div class="caption">
-                            workout today
+                            Workouts today
                             
                         </div>
-                        <div id="workout-stats"></div>
+                        <div id="workout"></div>
                         <div class="legend">
-                            <span id="city" class="label">City</span>
-                            <span id="highway" class="label">Highway</span>
-                            <span id="idle" class="label">Idle</span>
+                            <span id="upper_body" class="label">Upper body</span>
+                            <span id="lower_body" class="label">Lower body</span>
+                            <span id="core" class="label">Core</span>
                         </div>
                     </div>
+                    
+                    
+                    
                     <div class="col-sm-12 col-md-5 chart">
                         <div class="caption">
-                            Workout this week
+                            Todays workout goals
                         </div>
-                        <div id="fuel-projection"></div>
+                        <div id="workout-goals"></div>
                         <div class="legend">
-                            <span id="projection" class="label">Projection</span>
-                            <span id="today" class="label">Until today</span>
+                            <span id="completed" class="label">completed</span>
+                            <span id="to-do" class="label">to do</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
             <div id="co2-tab" class="tab-pane">
                 <div class="row">
                     <div class="col-xs-12 chart">
                         <div class="caption">
-                            workout this week
-                            
+                            Something else
+                            <span class="label label-default">g/km</span>
                         </div>
                         <div id="co2-emissions"></div>
                     </div>
