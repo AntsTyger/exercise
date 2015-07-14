@@ -69,68 +69,9 @@ body {
      } 
 
 
-.links {
-	display: block;
-	margin: 1.5em auto 0 auto;
-	text-align: center;
-	font-size: 0.8em;
-	color: white;
-	a {
-		color: white;
-	}
-}
-
-.forms {
-	padding: 0 5%;
-}
-label {
-	color: $dark;
-}
-
-inline {
-	margin-top: 15px;
-}
-
-button {
-	float: left;
-	width: 30% !important;
-	margin-left: 5%;
-}
-
-input[type="text"], textarea {
-	width: 100%;
-	margin: .5em 2% 1em 0;
-	display: inline-block;
-	outline: none;
-	background: white_opaque;;
-	border: none;
-	height: 40px;
-	border-radius: 4px;
-	padding: 1em 2em;
-}
-textarea {
-	height: 200px;
-}
-input[type="submit"] {
-	background: white;
-	outline: none;
-	border: none;
-	height: 40px;
-	border-radius: 4px;
-	width: 25%;
-	display: inline-block;
-	transition: all .4s ease-in-out;
-	cursor: pointer;
-	color: $dark;
-	&:hover {
-		background: $dark;
-		color: white;
-	}
-}
-
-
 
 ::-webkit-input-placeholder { color: $dark; }
+
 
 .recipe {
 	background: white;
