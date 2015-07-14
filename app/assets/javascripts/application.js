@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require jquery
 //= require cocoon
-//= require turbolinks
+
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require masonry/jquery.masonry
