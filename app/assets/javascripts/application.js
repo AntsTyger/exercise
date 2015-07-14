@@ -13,11 +13,13 @@
 
 
 //= require jquery
+
 //= require jquery_ujs
+//= require turbolinks
 //= require cocoon
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require masonry/jquery.masonry
-//= require highcharts
-
+//= require raphael
+//= require morris
 //= require_tree .

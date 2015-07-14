@@ -1,32 +1,57 @@
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
-
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-<script>
-$(function () { 
-    $('#container').highcharts({
-        chart: {
-            type: 'bar'
-        },
-        title: {
-            text: 'Fruit Consumption'
-        },
-        xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
-        },
-        yAxis: {
-            title: {
-                text: 'Fruit eaten'
-            }
-        },
-        series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
-        }]
-    });
-});
-</script>
+<div id="monitor" class="panel panel-default tab-box">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <i class="fa fa-signal"></i>
+            Workout stats
+        </h3>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#fuel-tab" data-toggle="tab">Today</a>
+            </li>
+            <li>
+                <a href="#co2-tab" data-toggle="tab">Week</a>
+            </li>
+        </ul>
+    </div>
+    <div class="panel-body">
+        <div class="tab-content">
+            <div id="fuel-tab" class="tab-pane active">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7 chart">
+                        <div class="caption">
+                            workout today
+                            
+                        </div>
+                        <div id="fuel-consumption"></div>
+                        <div class="legend">
+                            <span id="city" class="label">City</span>
+                            <span id="highway" class="label">Highway</span>
+                            <span id="idle" class="label">Idle</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 chart">
+                        <div class="caption">
+                            Workout this week
+                        </div>
+                        <div id="fuel-projection"></div>
+                        <div class="legend">
+                            <span id="projection" class="label">Projection</span>
+                            <span id="today" class="label">Until today</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="co2-tab" class="tab-pane">
+                <div class="row">
+                    <div class="col-xs-12 chart">
+                        <div class="caption">
+                            workout this week
+                            
+                        </div>
+                        <div id="co2-emissions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
