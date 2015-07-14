@@ -73,8 +73,6 @@ GEM
     haml (4.0.6)
       tilt
     hashie (3.4.2)
-    highcharts-rails (3.0.10)
-      railties (>= 3.1)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.3.0)
@@ -537,7 +535,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise (~> 3.4.0)
   haml (~> 4.0.5)
-  highcharts-rails (~> 3.0.0)
   jbuilder (~> 2.0)
   jquery-rails
   masonry-rails (~> 0.2.4)
