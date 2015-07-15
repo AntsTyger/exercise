@@ -10,8 +10,7 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
     devise_parameter_sanitizer.for(:sign_up) << :weight
     devise_parameter_sanitizer.for(:sign_up) << :age
     devise_parameter_sanitizer.for(:sign_up) << :height
-    devise_parameter_sanitizer.for(:sign_up) << :goal
-
+    devise_parameter_sanitizer.for(:sign_up) << :BMI
     devise_parameter_sanitizer.for(:sign_up) << :gender
   end 
 
