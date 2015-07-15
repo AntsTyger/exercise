@@ -1,16 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <h1>Sign up</h1>
@@ -25,9 +13,14 @@
       <%= f.text_field :name, class: "form-control" %>
       </div>
 
+      
       <div class="form-group">
-      <%= f.label :gender %>
-      <%= f.text_field :gender, class: "form-control" %>
+        <%= f.label :gender %><i> (select one from list)</i>
+          <%#= f.text_field :gender, class: "form-control" %>
+           <%= f.select(:gender, options_for_select([['Male', 'Male'],
+                                  ['Female', 'Female']]), 
+                                  {},
+                                  {:class => "form-control"}) %>
       </div>
 
 
