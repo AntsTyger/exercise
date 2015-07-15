@@ -1,13 +1,21 @@
-<div style="position:absolute;" >
-
-      <div class="item">
-        <img src="http://s7.postimg.org/8b4uk96kr/shutterstock_135657995.jpg" alt="Slide 2">
-      </div>
-
-  </div>
+<!DOCTYPE html>
 
 
-  <div id="container" style=" position:center; font-size: 30px">
-    <h1 style="color:orange; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 45px">Welcome to Jump start</h1>
-    <p style="color:orange; font-size: 17px; padding-top:15px;"> Track your workouts,</br>browse and save helathy recipes</br> and view sample workout routines</p>
+<div id="bg">
+  <img src="http://s2.postimg.org/464uexcwp/image.jpg" >
+</div>
+
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Jump Start</a></h1>
+		</div>
+		
+ <div id="container" style=" position:center"; height= "auto">
+    <h1 style="color:orange; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 60px"> Jump start</h1>
+    <p style="color:orange; font-size: 30px; padding-top:15px;"> Your fitness</p>
+  	<p>
+      <%= link_to "Sign In", new_user_session_path, class: "btn btn-large btn-success" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-large btn-primary" %>
+		</p>
   </div>

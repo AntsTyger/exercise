@@ -74,7 +74,7 @@ body {
 
 ::-webkit-input-placeholder { color: $dark; }
 
-
+/* Recipes styling */
 .recipe {
 	background: white;
 	border-radius: 5px;
@@ -148,7 +148,7 @@ body {
 	}
 }
 
-
+/*workouts styling */
 #index_workouts {
 	h2 {
 		margin-bottom: 0;
@@ -167,7 +167,7 @@ body {
 }
 
 
-
+/* Graphs styling */
 
 .tab-box .panel-heading > .nav-tabs {
     float: right;
@@ -197,3 +197,26 @@ body {
 svg {
     width: 100% !important;
 }
+
+/* homepage styling */
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+
+	
