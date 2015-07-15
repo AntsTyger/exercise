@@ -148,8 +148,28 @@ body {
 	}
 }
 
+.form-inline {
+	margin-top: 15px;
+}
+.form-input {
+	width: 65% !important;
+	float: left;
+}
+.form-button {
+	float: left;
+	width: 30% !important;
+	margin-left: 5%;
+}
+.add-button {
+	margin-top: 25px;
+}
+
 /*workouts styling */
 #index_workouts {
+
+	h1 {
+		color:white;	
+	}
 	h2 {
 		margin-bottom: 0;
 		font-weight: 100;
@@ -161,42 +181,19 @@ body {
 		margin: 0;
 		font-size: 18px;
 		span {
-			color: rgb(48, 181, 199);
+			color: black;
 		}
 	}
 }
 
+/* ----- SimpleForm Styles ----- */
 
-/* Graphs styling */
+.simple_form label {
+ color:white;
+}
 
-.tab-box .panel-heading > .nav-tabs {
-    float: right;
-    margin-top: -2px;
-    display: inline-block;
-    border-bottom: 0;
-}
-.tab-box .panel-heading > .nav-tabs > li > a {
-    border: 0;
-    padding: 6px 7px;
-}
-@media (min-width: 444px) {
-    .tab-box .panel-heading > .nav-tabs > li > a {
-        padding: 6px 15px;
-    }
-}
-.tab-box .panel-heading > .nav-tabs > li.active > a {
-    border-left: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
-    border-bottom: 0;
-    border-top: 1px solid #7c1c1d;
-    background: #fff;
-}
-.panel.panel-default > .panel-heading h3 {
-    display: inline-block;
-}
-svg {
-    width: 100% !important;
-}
+
+
 
 /* homepage styling */
 
