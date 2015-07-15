@@ -13,6 +13,3 @@
 							= link_to like_routine_path(@routine), method: :put, class: "btn btn-default" do
 								%span.glyphicon.glyphicon-heart
 								= @routine.get_upvotes.size
-							- if user_signed_in?
-								= link_to "Edit", edit_routine_path, class: "btn btn-default"
-								= link_to "Delete", routine_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

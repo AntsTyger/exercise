@@ -70,6 +70,7 @@ body {
 	 padding: 20px;
      } 
      
+/* ----------profile page styling------------- */
 #profile_container
      {
      
@@ -93,14 +94,14 @@ body {
 		}
 	}
 }
-
+/* ---------------------------------- */
 
 
 ::-webkit-input-placeholder { color: $dark; }
 
-/* Recipes styling */
+/* ------------Recipes styling--------------- */
 .recipe {
-	background: white;
+	background-color: white;
 	border-radius: 5px;
 	margin-bottom: 40px;
 	@include box-shadow;
@@ -126,7 +127,7 @@ body {
 		font-weight: normal;
 		line-height: 1.5;
 		a {
-			color: $red;
+			color: red;
 		}
 	}
 }
@@ -136,7 +137,7 @@ body {
 }
 
 #recipe_info, #ingredients, #directions {
-	background: white;
+	background-color: rgba(200,200,200,0.5);
 	@include box-shadow;
 	min-height: 360px;
 	border-radius: 5px;
@@ -153,10 +154,10 @@ body {
 	h1 {
 		font-size: 36px;
 		font-weight: normal;
-		color: $red;
+		color: yellow;
 	}
 	.description {
-		color: #8A8A8A;
+		color: white;
 		font-size: 20px;
 	}
 }
@@ -187,8 +188,10 @@ body {
 .add-button {
 	margin-top: 25px;
 }
+/* --------------------------------- */
 
-/*workouts styling */
+
+/*------workouts styling------------ */
 #index_workouts {
 
 	h1 {
@@ -209,17 +212,20 @@ body {
 		}
 	}
 }
+/* ------------------------------- */
+
 
 /* ----- SimpleForm Styles ----- */
 
 .simple_form label {
- color:white;
+ color:yellow;
 }
+/* ---------------------------------*/
 
 
 
 
-/* homepage styling */
+/*-------- homepage styling--------- */
 
 #bg {
   position: fixed; 
@@ -238,11 +244,94 @@ body {
   min-width: 50%;
   min-height: 50%;
 }
+/* ---------------------------------- */
+
+/* ----------- Routines styling -------------------- */
+#routines {
+  margin: 0 auto;
+  width: 100%;
+  .box {
+	  margin: 10px;
+	  width: 350px;
+	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+	  border-radius: 7px;
+	  text-align: center;
+	  img {
+	  	max-width: 100%;
+	  	height: auto;
+	  }
+	  h2 {
+	  	font-size: 22px;
+	  	margin: 0;
+	  	padding: 25px 10px;
+	  	a {
+				color: #474747;
+	  	}
+	  }
+	  .user {
+	  	font-size: 12px;
+	  	border-top: 1px solid #EAEAEA;
+			padding: 15px;
+			margin: 0;
+	  }
+	}
+}
+
+#edit_page {
+	.current_image {
+		img {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+}
+
+#routine_show {
+	.panel-heading {
+		padding: 0;
+	}
+	.routine_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.panel-body {
+		padding: 35px;
+		h1 {
+			margin: 0 0 10px 0;
+		}
+		.description {
+			color: #868686;
+			line-height: 1.75;
+			margin: 0;
+		}
+	}
+	.panel-footer {
+		padding: 20px 35px;
+		p {
+			margin: 0;
+		}
+		.user {
+			padding-top: 8px;
+		}
+	}
+}
+
+textarea {
+	min-height: 250px;
+}
+
+/* ------------------------------------ */
 
 
-/* graphs */
+
+/*----------- graphs --------------*/
 
 #line-chart,
 #pie-chart{
   min-height: 250px;
 }
+/* ------------------------------ */
