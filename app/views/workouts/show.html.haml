@@ -14,7 +14,7 @@
 	
 %h3{:style => "color:white"} Add an exercise 
 = render "exercises/form"
-	
+%br/	
 = link_to "Back", root_path, class: "btn btn-default"
 = link_to "Edit", edit_workout_path(@workout), class: "btn btn-default"
 = link_to "Delete", workout_path(@workout), class: "btn btn-default", method: :delete, data: { confirm: "Are you sure?" }

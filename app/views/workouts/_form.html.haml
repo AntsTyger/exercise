@@ -1,8 +1,12 @@
 = simple_form_for(@workout, html: { class: 'form-horizontal' }) do |f|
 	= f.input :date, label: "Date" 
+	%br/
 	= f.input :workout, label: "Which area did you workout?", :collection =>['Upper body', 'Lower Body', 'Core', 'Total body']
+	%br/
 	= f.input :strength, label: "Did you do Strenth or cardio?", as: :boolean, as: :select, :collection => [['Cardio',false],['Strength',true]]
+	%br/
 	= f.input :mood, label: "How were you feeling?", input_html: { class: "form-control" }
+	%br/
 	= f.input :length, label: "How long was the workout (in minutes)?", input_html: { class: "form-control" }
 	%br/
 	= f.button :submit

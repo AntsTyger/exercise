@@ -69,6 +69,30 @@ body {
 	 border-radius:25px;
 	 padding: 20px;
      } 
+     
+#profile_container
+     {
+     
+     margin: 0 auto;
+     text-align: center;
+     background-color: rgba(200,200,200,0.5);
+     width:350px;
+     height:300px;
+     border:2px solid black;
+	 border-radius:25px;
+	 padding: 20px;
+     }
+     
+#profile, #notes {
+	margin-bottom: 50px;
+	ul, ol {
+		padding-left: 18px;
+		li {
+			padding: 1em 0;
+			border-bottom: 1px solid #EAEAEA;
+		}
+	}
+}
 
 
 

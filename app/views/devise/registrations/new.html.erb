@@ -16,8 +16,7 @@
       
       <div class="form-group">
         <%= f.label :gender %><i> (select one from list)</i>
-          <%#= f.text_field :gender, class: "form-control" %>
-           <%= f.select(:gender, options_for_select([['Male', 'Male'],
+           <%= f.select(:gender, options_for_select([['Male', 'Female'],
                                   ['Female', 'Female']]), 
                                   {},
                                   {:class => "form-control"}) %>

@@ -1,0 +1,17 @@
+   <div class="col-sm-6 text-center">
+      <div id="line-chart">
+      	<%= content_tag :div, "", id: "workouts_chart", data: {workouts: Workout.chart_data} %>
+      </div>
+    </div>
+
+<div id="index_workouts">
+  <% @workouts.each do |workout| %>
+    <h2>
+      <%= link_to workout.date.strftime("%A %B %d"), workout %>
+    </h2>
+    <h3>
+      <span>Workout:</span>
+      <%= workout.workout %>
+    </h3>
+  <% end %>
+</div>
