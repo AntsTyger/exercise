@@ -6,7 +6,7 @@ console.log("This here");
     xkey: 'date',
     ykeys: ['length', 'strength_length', 'cardio_length'],
     labels: ['Total length', 'strength length', 'cardio length'],
-    preUnits: '$',
+    ,
   });
  });
     

@@ -2,6 +2,7 @@ class Workout < ActiveRecord::Base
  
   has_many :exercises, dependent: :destroy
 
+
   def self.chart_data(start = 1.weeks.ago)
     total_lengths = lengths_by_day(start)
     strength_lengths = where(strength: true).lengths_by_day(start)

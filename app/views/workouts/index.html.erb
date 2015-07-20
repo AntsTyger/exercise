@@ -1,8 +1,14 @@
-   <div class="col-sm-6 text-center">
+
+  <div class="col-sm-12 text-center">
+    <h2 style="color:white">Your workout this week</h2>
       <div id="line-chart">
       	<%= content_tag :div, "", id: "workouts_chart", data: {workouts: Workout.chart_data,} %>
       </div>
-    </div>
+      <br>
+      <br
+  </div>
+
+
 
 <div id="index_workouts" class="">
   <% @workouts.each do |workout| %>
