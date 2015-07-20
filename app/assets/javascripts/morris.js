@@ -79,7 +79,8 @@ Licensed under the BSD-2-Clause License.
       this.resizeHandler = __bind(this.resizeHandler, this);
       var _this = this;
       if (typeof options.element === 'string') {
-        this.el = $(document.getElementById(options.element));
+        this.el = $(document.getElementById(options.element))
+
       } else {
         this.el = $(options.element);
       }
