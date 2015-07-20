@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   	resources :exercises
  end
 
- root 'users#index'
- get 'about'     =>  'static_pages#about'
- get "stats" => "static_pages#stats"
+ root 'static_pages#index'
+
 end
