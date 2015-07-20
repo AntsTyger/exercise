@@ -1,16 +1,22 @@
 
   <div class="col-sm-12 text-center">
-    <h2 style="color:white">Your workout this week</h2>
+    <h1 style="color:white">Your workout stats this week</h1>
       <div id="line-chart">
       	<%= content_tag :div, "", id: "workouts_chart", data: {workouts: Workout.chart_data,} %>
       </div>
       <br>
-      <br
+      <br>
+      <br>
   </div>
 
 
 
+   <br>
+   <h1 style="color:white">All workouts: </h1>
+   <br>
+
 <div id="index_workouts" class="">
+
   <% @workouts.each do |workout| %>
     <h2>
       <%= link_to workout.date.strftime("%A %B %d"), workout %>
@@ -21,3 +27,5 @@
     </h3>
   <% end %>
 </div>
+<br>
+<br
