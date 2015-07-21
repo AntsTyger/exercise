@@ -49,14 +49,6 @@ body {
 }
 
 
-#notice {
-	text-align: center;
-	font-size: 0.6em;
-	color: $dark;
-	font-weight: 100;
-}
-
-
 #container
      {
      position: relative;
@@ -74,25 +66,20 @@ body {
 #profile_container
      {
      
-     margin: 0 auto;
+     margin: auto;
      text-align: center;
      background-color: rgba(200,200,200,0.5);
-     width:350px;
-     height:300px;
+     width:auto;
+     height:auto;
      border:2px solid black;
 	 border-radius:25px;
-	 padding: 20px;
+	 padding: 25px;
      }
      
 #profile {
-	margin-bottom: 50px;
-	ul, ol {
-		padding-left: 18px;
-		li {
-			padding: 1em 0;
-			border-bottom: 1px solid #EAEAEA;
-		}
-	}
+	width:auto;
+     height:auto;
+ 	padding: 25px;
 }
 /* ---------------------------------- */
 

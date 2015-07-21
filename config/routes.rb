@@ -15,6 +15,14 @@ Rails.application.routes.draw do
   	resources :exercises
  end
 
- root 'static_pages#index'
+
+authenticated :user do
+  root to: "users#index", as: :authenticated_root
+end
+
+unauthenticated do
+  root to: "landing_page#index"
+end
+
 
 end

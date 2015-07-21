@@ -26,4 +26,6 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
     user_path(resource)
   end
   
+  
+  
 end
