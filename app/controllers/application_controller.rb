@@ -15,17 +15,15 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
   end 
 
   def after_sign_in_path_for(resource)
-    user_path(resource)
+    '/users#index'
   end
 
   def after_sign_up_path_for(resource)
-    user_path(resource)
+    '/users#index'
   end
 
   def after_update_path_for (resource)
-    user_path(resource)
+    '/users#index'
   end
-  
-  
   
 end
