@@ -1,8 +1,9 @@
 class WorkoutsController < ApplicationController
 	before_action :find_workout, only: [:show, :edit, :update, :destroy]
-	def index
-		@workouts = Workout.all.order("created_at DESC")
-	end
+  def index
+    @search = WorkoutSearch.new(params[:search])
+    @workouts = @search.scope
+  end
 
 	def show
 	end
