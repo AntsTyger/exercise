@@ -1,10 +1,18 @@
 #container{:style => "min-width: 310px; height: auto; margin: 0 auto"}
 	#workout
 		%h2{:style => "color:white"} Your Workout
-		%p=  @workout.date.strftime("%A %B %d")
-		%p=  @workout.workout
-		%p=  @workout.mood
-		%p=  @workout.length
+		%p
+			Date:
+			=@workout.date.strftime("%A %B %d")
+		%p
+			Body focus:
+			=@workout.workout
+		%p
+			Mood:
+			=@workout.mood
+		%p
+			Length:
+			=@workout.length
 	
 	#exercises
 		%h2{:style => "color:white"} Exercises
