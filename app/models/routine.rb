@@ -1,4 +1,5 @@
 class Routine < ActiveRecord::Base
+    belongs_to :user
     acts_as_votable
 
 	has_attached_file :image, :styles => { :medium => "300x300>" }

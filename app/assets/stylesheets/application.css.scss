@@ -326,13 +326,15 @@ textarea {
 .morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0;}
 .morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0;}
 
-#workouts_chart{
-   	min-height: 350px;
+#workouts_chart, #workouts_bar_chart{
+   	min-height: 300px;
     background-color: rgba(200,200,200,0.5);
     border:2px solid black;
 	border-radius:25px;
 	padding: 25px;
 }
+
+
 
 /* ------------------------------ */
 

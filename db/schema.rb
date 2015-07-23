@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722223413) do
+ActiveRecord::Schema.define(version: 20150723121452) do
 
   create_table "directions", force: true do |t|
     t.text     "step"
@@ -114,6 +114,7 @@ ActiveRecord::Schema.define(version: 20150722223413) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "strength"
+    t.boolean  "cardio"
   end
 
 end

@@ -1,12 +1,12 @@
 class Workout < ActiveRecord::Base
-
+  belongs_to :user
   has_many :exercises, dependent: :destroy
 
 
   def self.chart_data(start = 1.weeks.ago)
     total_lengths = lengths_by_day(start)
     strength_lengths = where(strength: true).lengths_by_day(start)
-    cardio_lengths = where(strength: false).lengths_by_day(start)
+    cardio_lengths = where(cardio: true).lengths_by_day(start)
     (start.to_date..Date.today).map do |date|
       {
         date: date,

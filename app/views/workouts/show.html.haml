@@ -1,7 +1,7 @@
 #container{:style => "min-width: 310px; height: auto; margin: 0 auto"}
 	#workout
 		%h2{:style => "color:white"} Your Workout
-		%p=  @workout.date
+		%p=  @workout.date.strftime("%A %B %d")
 		%p=  @workout.workout
 		%p=  @workout.mood
 		%p=  @workout.length

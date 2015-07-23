@@ -1,8 +1,18 @@
 
-  <div class="col-sm-12 text-center">
-    <h1 style="color:white">Your workout stats this week</h1>
-      <div id="line-chart">
+  <div class="col-md-6 text-center">
+    <h1 style="color:white">Length of your workouts this week</h1>
+      <div >
       	<%= content_tag :div, "", id: "workouts_chart", data: {workouts: Workout.chart_data,} %>
+      </div>
+      <br>
+      <br>
+      <br>
+  </div>
+  
+    <div class="col-md-6 text-center">
+    <h1 style="color:white">Breakdown of your workouts this week</h1>
+      <div >
+      	<%= content_tag :div, "", id: "workouts_bar_chart", data: {workouts: Workout.chart_data,} %>
       </div>
       <br>
       <br>
@@ -14,7 +24,7 @@
    <br>
 
 <div class="row">
-  <h2 style="color:yellow">Please enter the range of dates in the search bar to view your past workouts </h2>
+  <h2 style="color:yellow">Please enter the date from & to in the search bar to view your past workouts </h2>
   <div class="pull-right range-query">
     <%= form_tag workouts_path, method: :get do %>
       <%= text_field_tag 'search[date_from]', @search.date_from %>

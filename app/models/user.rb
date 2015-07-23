@@ -4,8 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-    has_one :profile
-    has_one :stats
+    has_many :workouts
     has_many :recipes
     has_many :routines
 end

@@ -10,11 +10,29 @@ var meData = JSON.parse($("#workouts_chart").attr("data-workouts"));
     gridTextColor: 'white',
     data: meData,
     xkey: 'date',
-    ykeys: ['length', 'strength_length', 'cardio_length'],
-    labels: ['Total length', 'strength length', 'cardio length'],
-    lineColors: ['yellow', 'green', 'red'],
+    ykeys: ['length'],
+    labels: ['Total length'],
+    lineColors: ['yellow'],
     
     
     
   });
+  
  });
+  
+ $(function () {
+
+var meData = JSON.parse($("#workouts_chart").attr("data-workouts"));
+    Morris.Bar({
+    element: 'workouts_bar_chart',
+    
+    gridTextColor: 'white',
+    data: meData,
+    xkey: 'date',
+    ykeys: ['strength_length', 'cardio_length'],
+    labels: ['Strength', 'Cardio'],
+    barColors: ['red', 'green']
+    
+    
+  });
+  });
