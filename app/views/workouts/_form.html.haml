@@ -11,4 +11,6 @@
 	%br/
 	= f.input :length, label: "How long was the workout (in minutes)?", input_html: { class: "form-control" }
 	%br/
+	=  f.hidden_field :user_id , :value => current_user.id
+	
 	= f.button :submit

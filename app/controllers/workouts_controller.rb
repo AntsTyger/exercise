@@ -1,21 +1,23 @@
 class WorkoutsController < ApplicationController
 	before_action :find_workout, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:show]
   def index
     @search = WorkoutSearch.new(params[:search])
-    @workouts = @search.scope
+    @workouts = current_user.workouts@search.scope
   end
 
 	def show
 	end
 
 	def new
-		@workout = Workout.new
+		@workout = current_user.workouts.build
 	end
 
 	def create
-		@workout = Workout.new(workout_params)
+		@workout = current_user.workouts.build(workout_params)
+
 		if @workout.save
-			redirect_to @workout
+			redirect_to @workout, notice: "Successfully created new workout"
 		else
 			render 'new'
 		end
@@ -40,7 +42,7 @@ class WorkoutsController < ApplicationController
 	private
 
 	def workout_params
-		params.require(:workout).permit(:date, :workout, :mood, :length, :strength, :cardio)
+		params.require(:workout).permit(:date, :workout, :mood, :length, :strength, :cardio, :user_id)
 	end
 
 	def find_workout
