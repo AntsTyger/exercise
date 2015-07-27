@@ -25,6 +25,4 @@ unauthenticated do
   root to: "landing_page#index"
 end
 
-
-
 end
