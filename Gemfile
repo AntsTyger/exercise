@@ -20,11 +20,12 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
-
 
 group :development, :test do
-     gem 'sqlite3'
+  gem 'sqlite3',     '1.3.9'
+  gem 'byebug',      '3.4.0'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring',      '1.1.3'
 end
 
 group :production do
