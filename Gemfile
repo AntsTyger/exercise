@@ -21,14 +21,15 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'puma'
+
 
 group :development, :test do
      gem 'sqlite3'
 end
 
 group :production do
-     gem 'pg'
-     gem 'rails_12factor'
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+  gem 'puma',           '2.11.1'
 end
 
