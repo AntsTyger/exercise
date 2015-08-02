@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'spring',      '1.1.3'
+  gem 'shoulda-matchers'
+  gem 'shoulda'
 end
 
 group :production do
