@@ -2,8 +2,8 @@
 
 one:
   step: MyText
-  recipe_id: 
+  recipe_id: 1
 
 two:
   step: MyText
-  recipe_id: 
+  recipe_id: 1

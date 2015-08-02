@@ -4,10 +4,10 @@ one:
   name: MyString
   sets: 1
   reps: 1
-  workout_id: 
+  workout_id: 1
 
 two:
   name: MyString
   sets: 1
   reps: 1
-  workout_id: 
+  workout_id: 1

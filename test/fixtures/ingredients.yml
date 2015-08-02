@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  recipe_id: 
+  recipe_id: 1
 
 two:
   name: MyString
-  recipe_id: 
+  recipe_id: 1
